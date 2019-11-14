@@ -1,0 +1,35 @@
+<% include partials/header.ejs %>
+<header>
+  <h1>Most Destructive Viruses</h1>
+</header>
+<hr />
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/shamoon">Shamoon</a></li>
+    <li><a href="/stuxnet">Stuxnet</a></li>
+    <li><a class="active" href="/iloveyou">ILOVEYOU</a></li>
+  </ul>
+</nav>
+<hr />
+<main class="main">
+  <figure>
+    <img class="detail-img" src="img/iloveyou.jpg" alt="virus image" />
+  </figure>
+  <article>
+    <h2>ILOVEYOU</h2>
+    <p>
+      ILOVEYOU was one of the first viruses that really hit millions of Windows
+      users through an email and it was at a time when emails were still in its
+      infancy so the idea that an email would cause your computer to destroy any
+      files was thought of impossible. There were previous email worms but this
+      one also copied itself to all the contacts in the Windows Address Book
+      which increased it's spread.
+    </p>
+  </article>
+</main>
+<div class="center">
+  <a href="https://en.wikipedia.org/wiki/ILOVEYOU">More Information</a>
+</div>
+
+<% include partials/footer.ejs %>
