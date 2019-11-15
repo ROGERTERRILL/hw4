@@ -21,10 +21,6 @@ app.get("/stuxnet", function(req, res) {
 });
 
 //server listener
-app.listen(
-  process.env.PORT || "8081",
-  process.env.IP || "localhost",
-  function() {
-    console.log("Express server is running...");
-  }
-);
+app.listen(process.env.PORT, process.env.IP, function() {
+  console.log("Express server is running...");
+});
