@@ -1,15 +1,15 @@
 <footer>
   <hr>
-  <p>Your random hacker note of the day:<span id="hackernote"></span></p>
-  &copy;2019 Roger Terrill
+  <h3>Your random hacker note of the day:</h3><span id="hackernote"></span>
+  <p>&copy;2019 Roger Terrill</p>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js" type="text/javascript"></script>
 <script>
   
-  if (document.readyState != 'loading'){
+  window.onload = () => {
     let phrase = faker.hacker.phrase();
-  let element = document.getElementById("hackernote");
-    element.innerHTML(phrase);
+    let element = document.getElementById("hackernote");
+    element.innerHTML= ` ${phrase}`;
   }
 </script>
 </body>
